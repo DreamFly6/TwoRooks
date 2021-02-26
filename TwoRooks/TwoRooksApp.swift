@@ -11,7 +11,7 @@ import SwiftUI
 struct TwoRooksApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+					GamesView()
         }
     }
 }

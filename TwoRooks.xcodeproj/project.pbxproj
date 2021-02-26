@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2267BDDE25E62D2500C654E5 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267BDDD25E62D2500C654E5 /* Move.swift */; };
+		2267BDF125E75CF700C654E5 /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267BDF025E75CF700C654E5 /* Times.swift */; };
 		22DB4DFC25D46491001C632C /* TwoRooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4DFB25D46491001C632C /* TwoRooksApp.swift */; };
-		22DB4DFE25D46491001C632C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4DFD25D46491001C632C /* ContentView.swift */; };
 		22DB4E0025D46492001C632C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DB4DFF25D46492001C632C /* Assets.xcassets */; };
 		22DB4E0325D46492001C632C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DB4E0225D46492001C632C /* Preview Assets.xcassets */; };
 		22DB4E0E25D46492001C632C /* TwoRooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4E0D25D46492001C632C /* TwoRooksTests.swift */; };
 		22DB4E1925D46492001C632C /* TwoRooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4E1825D46492001C632C /* TwoRooksUITests.swift */; };
+		22DB4E2B25D4A6D9001C632C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DB4E2A25D4A6D9001C632C /* GameKit.framework */; };
+		22DB4E3025D4A867001C632C /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4E2F25D4A867001C632C /* GamesView.swift */; };
+		22DB4E3825D4A893001C632C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4E3725D4A893001C632C /* GameView.swift */; };
+		22DB4E4525D4A8DD001C632C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4E4425D4A8DD001C632C /* GameScene.swift */; };
+		22DB4E5825D4D639001C632C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB4E5725D4D639001C632C /* Board.swift */; };
+		22FB402D25D772810034558B /* Piece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB402C25D772810034558B /* Piece.swift */; };
+		22FB403825D8FA7A0034558B /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB403725D8FA7A0034558B /* Square.swift */; };
+		22FB404525DDF90B0034558B /* PieceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB404425DDF90B0034558B /* PieceNode.swift */; };
+		22FB404A25DDF91C0034558B /* SquareNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB404925DDF91C0034558B /* SquareNode.swift */; };
+		22FB404F25DDF9280034558B /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB404E25DDF9280034558B /* BoardNode.swift */; };
+		22FB406A25E027E20034558B /* ImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB406925E027E20034558B /* ImageNode.swift */; };
+		22FB407725E2DE170034558B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB407625E2DE170034558B /* Theme.swift */; };
+		22FB407C25E3300D0034558B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB407B25E3300D0034558B /* DataManager.swift */; };
+		22FB408125E337A70034558B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB408025E337A70034558B /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2267BDDD25E62D2500C654E5 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		2267BDF025E75CF700C654E5 /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
 		22DB4DF825D46491001C632C /* TwoRooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoRooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DB4DFB25D46491001C632C /* TwoRooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRooksApp.swift; sourceTree = "<group>"; };
-		22DB4DFD25D46491001C632C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22DB4DFF25D46492001C632C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22DB4E0225D46492001C632C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		22DB4E0425D46492001C632C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +61,20 @@
 		22DB4E1425D46492001C632C /* TwoRooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoRooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DB4E1825D46492001C632C /* TwoRooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoRooksUITests.swift; sourceTree = "<group>"; };
 		22DB4E1A25D46492001C632C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DB4E2A25D4A6D9001C632C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		22DB4E2F25D4A867001C632C /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		22DB4E3725D4A893001C632C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		22DB4E4425D4A8DD001C632C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		22DB4E5725D4D639001C632C /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		22FB402C25D772810034558B /* Piece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piece.swift; sourceTree = "<group>"; };
+		22FB403725D8FA7A0034558B /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		22FB404425DDF90B0034558B /* PieceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceNode.swift; sourceTree = "<group>"; };
+		22FB404925DDF91C0034558B /* SquareNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareNode.swift; sourceTree = "<group>"; };
+		22FB404E25DDF9280034558B /* BoardNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardNode.swift; sourceTree = "<group>"; };
+		22FB406925E027E20034558B /* ImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNode.swift; sourceTree = "<group>"; };
+		22FB407625E2DE170034558B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		22FB407B25E3300D0034558B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		22FB408025E337A70034558B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DB4E2B25D4A6D9001C632C /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +110,7 @@
 				22DB4E0C25D46492001C632C /* TwoRooksTests */,
 				22DB4E1725D46492001C632C /* TwoRooksUITests */,
 				22DB4DF925D46491001C632C /* Products */,
+				22DB4E2925D4A6D9001C632C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +128,21 @@
 			isa = PBXGroup;
 			children = (
 				22DB4DFB25D46491001C632C /* TwoRooksApp.swift */,
-				22DB4DFD25D46491001C632C /* ContentView.swift */,
+				22DB4E2F25D4A867001C632C /* GamesView.swift */,
+				22FB408025E337A70034558B /* SettingsView.swift */,
+				22FB407B25E3300D0034558B /* DataManager.swift */,
+				22DB4E3725D4A893001C632C /* GameView.swift */,
+				22DB4E4425D4A8DD001C632C /* GameScene.swift */,
+				2267BDF025E75CF700C654E5 /* Times.swift */,
+				22FB406925E027E20034558B /* ImageNode.swift */,
+				2267BDDD25E62D2500C654E5 /* Move.swift */,
+				22DB4E5725D4D639001C632C /* Board.swift */,
+				22FB403725D8FA7A0034558B /* Square.swift */,
+				22FB402C25D772810034558B /* Piece.swift */,
+				22FB404425DDF90B0034558B /* PieceNode.swift */,
+				22FB404925DDF91C0034558B /* SquareNode.swift */,
+				22FB407625E2DE170034558B /* Theme.swift */,
+				22FB404E25DDF9280034558B /* BoardNode.swift */,
 				22DB4DFF25D46492001C632C /* Assets.xcassets */,
 				22DB4E0425D46492001C632C /* Info.plist */,
 				22DB4E0125D46492001C632C /* Preview Content */,
@@ -128,6 +174,14 @@
 				22DB4E1A25D46492001C632C /* Info.plist */,
 			);
 			path = TwoRooksUITests;
+			sourceTree = "<group>";
+		};
+		22DB4E2925D4A6D9001C632C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DB4E2A25D4A6D9001C632C /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +313,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DB4DFE25D46491001C632C /* ContentView.swift in Sources */,
+				22FB408125E337A70034558B /* SettingsView.swift in Sources */,
+				22FB404525DDF90B0034558B /* PieceNode.swift in Sources */,
+				22DB4E3025D4A867001C632C /* GamesView.swift in Sources */,
+				22DB4E3825D4A893001C632C /* GameView.swift in Sources */,
+				22FB407C25E3300D0034558B /* DataManager.swift in Sources */,
+				22FB406A25E027E20034558B /* ImageNode.swift in Sources */,
+				22FB407725E2DE170034558B /* Theme.swift in Sources */,
+				22DB4E5825D4D639001C632C /* Board.swift in Sources */,
+				2267BDF125E75CF700C654E5 /* Times.swift in Sources */,
+				22FB404A25DDF91C0034558B /* SquareNode.swift in Sources */,
+				22FB402D25D772810034558B /* Piece.swift in Sources */,
+				22FB404F25DDF9280034558B /* BoardNode.swift in Sources */,
+				2267BDDE25E62D2500C654E5 /* Move.swift in Sources */,
+				22FB403825D8FA7A0034558B /* Square.swift in Sources */,
+				22DB4E4525D4A8DD001C632C /* GameScene.swift in Sources */,
 				22DB4DFC25D46491001C632C /* TwoRooksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
