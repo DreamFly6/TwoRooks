@@ -24,6 +24,11 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
 	var board = Board()
 	var pawnSquare: Square? = nil
 	var times = DataManager.shared.times
+	var gameOver: Bool {
+		get {
+			return statusNode.text == "Checkmate!" || statusNode.text == "Stalemate!"
+		}
+	}
 	
 	override func sceneDidLoad() {
 		backgroundColor = .clear
@@ -144,12 +149,16 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
 				return
 			}
 			
+			if gameOver {
+				return
+			}
+			
 			guard let squareNode = node as? SquareNode else {
 				continue
 			}
 			
 			if let selectedSquareNode = boardNode.selectedSquareNode, squareNode == selectedSquareNode {
-				continue
+				return
 			}
 			
 			if let piece = board.pieces[squareNode.square], piece.isWhite == board.whiteTurn {
@@ -203,6 +212,10 @@ class GameScene: SKScene, UIGestureRecognizerDelegate {
 	
 	override func update(_ currentTime: TimeInterval) {
 		guard let fps = view?.preferredFramesPerSecond else {
+			return
+		}
+		
+		if gameOver {
 			return
 		}
 		

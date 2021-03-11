@@ -16,6 +16,7 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
 	case ocean = "🌊"
 	case forest = "🌲"
 	case moon = "🌑"
+	case autumn = "🍁"
 	
 	private func color(_ hex: UInt32) -> UIColor {
 		let red = (hex & 0xff0000) >> 16
@@ -29,9 +30,11 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
 			case .ocean:
 				return Colors(squareWhite: color(0xb2ecee), squareBlack: color(0x0375fb), pieceWhite: color(0x00c1ce), pieceBlack: color(0x0100a7))
 			case .forest:
-				return Colors(squareWhite: color(0x72dd65), squareBlack: color(0x1c8900), pieceWhite: color(0xcc8b33), pieceBlack: color(0x834600))
+				return Colors(squareWhite: color(0xcce8b5), squareBlack: color(0x38571a), pieceWhite: .white, pieceBlack: .black)
 			case .moon:
 				return Colors(squareWhite: color(0xc0c0c0), squareBlack: color(0x606060), pieceWhite: .white, pieceBlack: .black)
+			case .autumn:
+				return Colors(squareWhite: color(0xffad3a), squareBlack: color(0xb22a00), pieceWhite: .white, pieceBlack: .black)
 		}
 	}
 }
